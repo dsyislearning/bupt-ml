@@ -11,7 +11,7 @@ model = BertForSequenceClassification.from_pretrained('bert_classifier')
 
 class_names = ['Normal', 'Anomalous']
 
-validation_data_filename = 'test_logs_sub_1.json'
+validation_data_filename = 'test_logs_sub_2.json'
 
 with open(validation_data_filename, "r") as f:
     data = json.load(f)
