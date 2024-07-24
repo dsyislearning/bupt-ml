@@ -20,6 +20,11 @@
 
 使用 Huggingface 提供的 `transformers` 、 `datasets` 、 `evaluate` 库实现预训练模型的加载、微调和评估。在 200 条数据上测试最终可以得到较高的正确率。
 
+## 使用
+
+- 训练代码：`bert_classifier.py`
+- 测试代码：`test.py`
+
 <h2 id="en">Track 2: Log Anomaly Detection</h2>
 
 The data set is the log information generated during the operation of a system. In order to realize the automatic alarm capability of the system, it is necessary to implement a machine learning algorithm to use the log information to determine whether the system has anomalies. We collected multiple log information and annotated them. The annotations are divided into two categories: `Normal` and `Anomalous`.
@@ -36,3 +41,8 @@ For example:
 We use the currently popular large language model to solve the text binary classification problem of whether the log is abnormal. Based on `bert-base-cased`, we fine-tune it with our dataset, and get a binary classification task that can complete whether the specified log is abnormal.
 
 Use the `transformers`, `datasets`, and `evaluate` libraries provided by Huggingface to load, fine-tune, and evaluate the pre-trained model. Testing on 200 data finally yields a high accuracy rate.
+
+## Usage
+
+- Training code: `bert_classifier.py`
+- Testing code: `test.py`
